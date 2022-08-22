@@ -20,12 +20,13 @@ public class Main {
     }
 
     public static int calculationDays(int distant) {
-      int deys=0;
-      int step=40;
-        if (distant<=20) {deys=1;}
-        else {deys=(distant-20)/40+2;
+        int days;
+        if (distant <= 20) {
+            days = 1;
+        } else {
+            days = (distant - 20) / 40 + 2;
         }
-      return deys;
+      return days;
     }
     public static void choosingVersion(int OS, int yar) {
         int currentYear = LocalDate.now().getYear();
@@ -52,7 +53,7 @@ public class Main {
         checkingYear(year);
 
 //        Задача 2
-        int OS = 1; // 1- Androin, 0- iOS
+        int OS = 1; // 1- Android, 0- iOS
         int yearReleasePhone=2022;// год выпуска телефона
         choosingVersion(OS, yearReleasePhone);
 
