@@ -62,6 +62,5 @@ public class Main {
         int day=calculationDays(distance);
         System.out.println("Для доставки карты потребуется дней - "+day);
 
-//        System.out.println("Hello world!");
     }
 }
